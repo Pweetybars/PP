@@ -1,0 +1,25 @@
+.project{
+    border: solid  #000000  1px;
+    width: 90rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+.project h2{
+    text-align: center;
+    font-size: 2.5em;   
+    margin: 5px;
+}
+.project h4{
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+.project-container{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+.project-container div{
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+}
