@@ -23,3 +23,7 @@
     margin: auto;
     margin-top: 0px;
 }
+.project-container a{
+    color: black;
+    text-decoration: none;
+}

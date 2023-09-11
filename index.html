@@ -8,12 +8,16 @@
     <link rel = "icon" href ="icon.jpg" type = "image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleProject.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 </head>
 <body>
-    <header class="header">
-        <a href="#bio"><p>BIO</p></a>
-        <a href="#project"><p>PROJECTS</p></a>
-        <a href="#about"><p>ABOUT</p></a>
+    <header class="header" id="header">
+        <p class="link" id="#bio">BIO</p>
+        <p class="link" id="#project">PROJECTS</p>
+        <p class="link" id="#about">ABOUT</p>
     </header>
 
     <main class="main">
@@ -46,20 +50,20 @@
             <h2>PROJECTS</h2>
             <div class="project-container">
                 <div>
-                    <h4> &#8226; Personal Portfolio</h4>
-                    <img src="icon.jpg" alt="">
+                    <a href=""><h4> &#8226; Personal Portfolio</h4></a>
+                    <a href=""><img src="icon.jpg" alt=""></a>
                 </div>
                 <div>
-                    <h4> &#8226;  Rock Paper Scissors Game</h4>
-                    <img src="icon.jpg" alt="">
+                    <a href=""><h4> &#8226; Cambodia National Team Website</h4></a>
+                    <a href=""><img src="icon.jpg" alt=""></a>
                 </div>
                 <div>
-                    <h4> &#8226; Cambodia National Team Website</h4>
-                    <img src="icon.jpg" alt="">
+                    <a href=""><h4> &#8226; A Simple Online Shopping Website</h4></a>
+                    <a href=""><img src="icon.jpg" alt=""></a>
                 </div>
                 <div>
-                    <h4> &#8226; A Simple Online Shopping Website</h4>
-                    <img src="icon.jpg" alt="">
+                    <a href=""><h4> &#8226; Rock Paper Scissor Game</h4></a>
+                    <a href=""><img src="icon.jpg" alt=""></a>
                 </div>
             </div>
         </section>
@@ -69,6 +73,10 @@
         </section>
 
     </main>
+
+    <a href="#bio" class="top-link scroll-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <script src="app.js"></script>
 </body>
