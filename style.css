@@ -6,6 +6,7 @@ body{
     font-family: 'Roboto', Times, serif;
     background-color: beige;
     padding-bottom: 100rem;
+
 }
 .header{
     display: inline-block;
@@ -62,4 +63,10 @@ body{
 }
 .social p{
     margin-left: 0px;
+}
+
+.show-link{
+    position: relative;
+    visibility: visible;
+    z-index: 100;
 }
