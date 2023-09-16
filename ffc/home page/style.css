@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;500;600;700&family=Lexend+Peta:wght@400;700;900&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 body {
     background-color: #011638;
 }
@@ -29,4 +30,25 @@ body {
 .nav-bar button:hover{
     opacity: 0.7;
     cursor: pointer;
+}
+
+.description{
+    position: fixed;
+    color: white;
+    font-family: Anton;
+    width: 70%;
+    margin-left: 30rem;
+}
+.title h1{
+    font-size: 8rem;
+    margin-top: 2rem;
+}
+.description h5{
+    font-size: 3rem;
+}
+.description p{
+    font-size: 2rem;
+}
+.text{
+    width: 50rem;
 }
