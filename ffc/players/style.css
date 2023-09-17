@@ -4,6 +4,52 @@ body{
     background-color: #011638;
     color : white;
 }
+header{
+    margin-top: 2rem;
+    background-color: rgba(200, 200, 200, 0.7);
+    border-radius: 10px;
+}
 header h1{
     text-align: center;
+    margin: 0;
+}
+header span img{
+    height: 2rem;   
+}
+.logo-left {
+    margin-right: 10rem;
+}
+.logo-right {
+    margin-left: 10rem;
+}
+main, 
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+main div {
+    height: 18rem;
+    width: 10rem;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+}
+main div img {
+    height: 80%;
+    width:100%;
+    border-radius:15px;
+}
+main div p{
+    margin:0;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.7);
+    border-radius: 5px;
+}
+
+@media screen and (max-widh :800px){
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
 }
