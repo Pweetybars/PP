@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;500;600;700&family=Lexend+Peta:wght@400;700;900&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+body{
+    font-family: Anton;
+    background-color: #011638;
+    color : white;
+}
+header h1{
+    text-align: center;
+}
