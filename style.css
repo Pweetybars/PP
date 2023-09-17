@@ -120,3 +120,7 @@ body{
       transform: scale(1);
     }
   }
+
+.project img{
+    border-radius: 10px;
+}
