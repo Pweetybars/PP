@@ -181,11 +181,15 @@ document.querySelector('.main-container').innerHTML = playerHTML;
 const playerProfile = document.querySelectorAll(".player-container")
 const playersname = document.querySelectorAll(".player-name")
 
+topLink = document.querySelector('.top-link')
+
+
 let nameList = [];
 
 let playerCard = " ";
 
-modal = document.querySelector('.modal-player')
+modal = document.querySelector('.modal-player');
+modalHeight = modal.offsetTop;
 
 playersname.forEach((pName)=>{
     pName.addEventListener('click', ()=>{
@@ -206,6 +210,20 @@ playersname.forEach((pName)=>{
                     <p>STAT : ${player.appearance}(${player.goal})</p>
                 </div>`
                 modal.innerHTML = playerCard;
+                window.scrollTo({
+                    top:modalHeight
+                })
 
             }})})})
-   
+
+
+
+window.addEventListener('scroll', ()=>{
+    const scrollHeight = window.pageYOffset;
+    if (scrollHeight > 500){
+        topLink.classList.add("scroll-link")
+    } else { 
+        topLink.classList.remove("scroll-link")
+    }
+
+})

@@ -4,6 +4,9 @@ body{
     background-color: #011638;
     color : white;
 }
+html{
+    scroll-behavior:smooth ;
+}
 header{
     margin-left: 10px;
     background-color: rgba(200, 200, 200, 0.7);
@@ -32,7 +35,7 @@ main div {
     width: 10rem;
     align-items: center;
     margin-left: 1.5rem;
-    margin-top: 3rem;
+    margin-top:1.9rem;
 }
 main div img {
     height: 80%;
@@ -50,6 +53,12 @@ main div p{
 main p:hover{
     cursor: pointer;
 }
+.Preview{
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
 
 .modal-player{
     display: flex;
@@ -59,6 +68,7 @@ main p:hover{
     width: 70%;
     height: 47rem;
     border-radius: 30px;
+    margin-bottom: 4rem;
 }
 .player-image{
     height: 40rem;
@@ -86,7 +96,7 @@ main p:hover{
 }
 @-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
@@ -118,7 +128,7 @@ main p:hover{
     }
     header{
         margin: auto;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         width: 380px;
         background-color: rgba(200, 200, 200, 0.7);
         border-radius: 10px;
@@ -137,3 +147,36 @@ main p:hover{
     }
 }
 
+.top-link{
+    color: black;
+    font-size: 0.7rem;
+     position: fixed;
+     bottom: 3rem;
+     right: 3rem;
+     width: 3rem;
+     height: 3rem;
+     display: grid;
+     place-items: center;
+     border-radius: 3px;
+     background-color: rgba(200, 200,200, 0.5);
+     animation: bounce 2s ease-in-out infinite;
+     
+       visibility: hidden;
+       z-index: -100;
+   }
+   .scroll-link{
+       visibility: visible;
+       z-index: 100;
+   }
+   
+   @keyframes bounce {
+       0% {
+         transform: scale(1);
+       }
+       50% {
+         transform: scale(1.5);
+       }
+       100% {
+         transform: scale(1);
+       }
+     }
