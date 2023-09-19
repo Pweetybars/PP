@@ -173,8 +173,19 @@ let playerHTML = " ";
 players.forEach((player)=>{
     playerHTML += `<div class="player-container">
     <img class="player-img" src="player picture/${player.name}.jpg" alt="">
-    <p>${player.name}</p>
+    <p class="player-name">${player.name}</p>
 </div>`
 })
 
 document.querySelector('.main-container').innerHTML = playerHTML;
+const playerProfile = document.querySelectorAll(".player-container")
+const playersname = document.querySelectorAll(".player-name")
+
+let nameList = [];
+
+playersname.forEach((pn)=>{
+    name = pn.innerHTML
+    nameList.push(name)
+})
+
+console.log(nameList)
