@@ -98,7 +98,7 @@ const players = [
     {
         name : "Chhong Bunnath",
         birthdate : "28/November/1998",
-        team : "Nagaworld",
+        team : "Nagaworld Football Club",
         appearance : 3,
         goal : 0, 
         role : "Center Back"
@@ -154,7 +154,7 @@ const players = [
     {
         name : "Ouk Sovann",
         birthdate : "15/May/1998",
-        team : "Visaka Football Club",
+        team : "Visakha Football Club",
         appearance : 10, 
         goal : 0, 
         role : "Center Back"
@@ -183,9 +183,29 @@ const playersname = document.querySelectorAll(".player-name")
 
 let nameList = [];
 
-playersname.forEach((pn)=>{
-    name = pn.innerHTML
-    nameList.push(name)
-})
+let playerCard = " ";
 
-console.log(nameList)
+modal = document.querySelector('.modal-player')
+
+playersname.forEach((pName)=>{
+    pName.addEventListener('click', ()=>{
+        name = pName.innerHTML;
+        players.forEach((player)=>{
+            if (player.name === name){
+                console.log(player)
+                playerCard = `
+                <div class="player-image">
+                    <img src="player picture/${player.name}.jpg" alt="">
+                </div>
+                <div class="player-description">
+                    <img class="club-logo" src="/ffc/home page/club logo/${player.team}.png" alt="">
+                    <h3>${player.name}</h3>
+                    <p>${player.role}</p>
+                    <p>${player.team}</p>
+                    <p>${player.birthdate}</p>
+                    <p>STAT : ${player.appearance}(${player.goal})</p>
+                </div>`
+                modal.innerHTML = playerCard;
+
+            }})})})
+   
