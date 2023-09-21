@@ -4,6 +4,7 @@ body{
     background-color: #011638;
     color : white;
 }
+
 html{
     scroll-behavior:smooth ;
 }
@@ -179,4 +180,10 @@ main p:hover{
        100% {
          transform: scale(1);
        }
+     }
+
+     @media screen and (max-width :1800){
+        html{
+            scale:1.5
+        }
      }
