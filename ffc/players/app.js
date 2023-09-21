@@ -183,6 +183,7 @@ const playersname = document.querySelectorAll(".player-name")
 
 topLink = document.querySelector('.top-link')
 
+const body = document.querySelector('.body')
 
 let nameList = [];
 
@@ -211,7 +212,7 @@ playersname.forEach((pName)=>{
                 </div>`
                 modal.innerHTML = playerCard;
                 window.scrollTo({
-                    top:modalHeight
+                    top:1000000
                 })
 
             }})})})

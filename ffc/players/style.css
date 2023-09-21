@@ -8,13 +8,15 @@ body{
 html{
     scroll-behavior:smooth ;
 }
-header{
-    margin-left: 10px;
+.header{
+    text-align: center;
     background-color: rgba(200, 200, 200, 0.7);
     border-radius: 10px;
+    margin-left: 1.5rem;
 }
 header h1{
     text-align: center;
+    margin-left: 1.5rem;
 }
 header span img{
     height: 2rem;   
@@ -25,11 +27,11 @@ header span img{
 .logo-right {
     margin-left: 5rem;
 }
-main, 
-section{
+main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     z-index: -100;
+    margin: 1.5rem;
 }
 main div {
     height: 18rem;
@@ -55,7 +57,7 @@ main p:hover{
     cursor: pointer;
 }
 .Preview{
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 4rem;
@@ -72,7 +74,7 @@ main p:hover{
     margin-bottom: 4rem;
 }
 .player-image{
-    height: 40rem;
+    height: 20rem;
     margin-top: 3rem;
     margin-left: 15rem;
     margin-bottom: 2rem;
@@ -112,29 +114,36 @@ main p:hover{
 @media screen and (max-width :800px){
     .main-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-
+        grid-template-columns: 30% 30% 30% ;
+        margin-right: 0px;
+    }
+    main{
+        margin-right: 48px;
     }
     main div {
         height: 15rem;
         width: 7rem;
         align-items: center;
         margin-top: 3rem;
-        margin-left: 10px;
-        margin-right: 5px;
+        margin-left: 0px;
+
     }
     main div img{
         margin: 0;
         align-items: center;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-right: 0px;
     }
     header{
-        margin: auto;
+        display: block;
         margin-top: 1.5rem;
-        width: 380px;
+        width: 70%;
         background-color: rgba(200, 200, 200, 0.7);
         border-radius: 10px;
     }
     header h1{
+        display: block;
         margin: 0;
     }
     header span img{
@@ -145,6 +154,77 @@ main p:hover{
     }
     .logo-right {
         margin-left: 0rem;
+    }
+    
+    .modal-player{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        background-color: rgba(200, 200, 200, 0.7);
+        width: 70%;
+        height: 62rem;
+        border-radius: 30px;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+        margin-right: 48px;
+    }
+    .Preview{
+        font-size: 2.4rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        margin-top: 4rem;
+    }
+
+    .player-image{
+        height: 23rem;
+        margin: auto;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .player-image img{
+        height: 100%;
+    }
+    .player-description{
+        text-align: center;
+        margin: auto;
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+    .player-description h3{
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        font-size: 2.3rem;
+        color:#1B03A3;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+       -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    .player-description p{
+        font-size: 2rem;
+    }
+    .club-logo{
+        height: 10rem;
+        margin-top: 0px;
+    }
+    .top-link{
+        color: black;
+        font-size: 0.7rem;
+         position: fixed;
+         bottom: 3rem;
+         right: 10rem;
+         width: 3rem;
+         height: 3rem;
+         display: grid;
+         place-items: center;
+         border-radius: 3px;
+         background-color: rgba(200, 200,200, 0.5);
+         animation: bounce 2s ease-in-out infinite;
+         
+           visibility: hidden;
+           z-index: -100;
+       }
+    .scroll-link{
+        visibility: hidden;
     }
 }
 
