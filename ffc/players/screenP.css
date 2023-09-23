@@ -1,0 +1,49 @@
+@media screen and (max-width : 500px){
+    .header{
+        top: 0;
+        width: 80%;
+        margin: auto;
+    }
+    .header h1{
+        padding: 10px 0px;
+        font-size: 1.5rem;
+    }
+    .logo-left,
+    .logo-right{
+        height: 1.5rem;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .player-container{
+        height: 20rem;
+        width: 10rem;
+    }
+    .player-name{
+        font-size: 1.7rem;
+    }
+    .modal-player{
+        width: 80%;
+        height: 700px;
+    }
+    .player-description{
+        font-size: 0.4rem;
+        margin-left: 15px;
+        text-align: center;
+        align-items: center;
+    }
+    .player-description p{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 1.1rem;
+    } 
+    .player-description img{
+        height: 6rem;
+    }
+    .player-image{
+        height: 30%;
+    }
+}

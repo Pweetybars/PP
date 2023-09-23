@@ -1,4 +1,4 @@
-const players = [
+players = [
     {
         name : "Sieng Chanthea", 
         birthdate : "9/September/2002", 
@@ -42,7 +42,7 @@ const players = [
     {
         name : "Vann Tailamey", 
         birthdate: "2/April/1999",
-        team : "Boueng Ket Football Club",
+        team : "Boeung Ket Football Club",
         appearance : 1,
         goal : 0, 
         role : "Right Back"
