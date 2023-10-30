@@ -68,15 +68,16 @@ main p:hover{
     flex-direction: row;
     margin: auto;
     background-color: rgba(200, 200, 200, 0.7);
-    width: 70%;
+    width: 90%;
     height: 47rem;
     border-radius: 30px;
     margin-bottom: 4rem;
+    margin-left: 2rem;
 }
 .player-image{
     height: 40rem;
     margin-top: 3rem;
-    margin-left: 15rem;
+    margin-left: 17rem;
     margin-bottom: 2rem;
 }
 .player-image img{
